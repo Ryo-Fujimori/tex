@@ -1,0 +1,62 @@
+\documentclass[dvipdfmx]{jarticle}
+%プリアンブル部
+%↓写真を入れる際に必要なパッケージ
+\usepackage[dvipdfmx]{graphicx}
+\title{texサンプル}
+\author{藤森　凌}
+\date{2022 4/28}
+
+%本文の始まり
+\begin{document}
+\maketitle
+%中央揃え
+\begin{center}
+
+\section{見出し}
+
+ここが見出しの下です
+段落改行を行うには\par
+「バックスラッシュ+per」と入力するか
+
+
+2行以上開けると改行できます\\
+この文は強制改行を利用して下げています
+
+
+\subsection{小節}
+↓写真挿入例↓\\
+%写真の例
+\includegraphics[width=5cm]{mtfuji.jpg}
+
+\subsubsection{見出し}
+↓表↓
+%表の例
+\begin{table}[h]
+\caption{サンプル}
+\label{table:data_type}
+\centering
+\begin{tabular}{lcr}
+\hline
+数字 & 漢数字 & 漢数字 \\
+\hline \hline
+1 & 一 & 壱 \\
+2 & 二 & 弐 \\
+3 & 三 & 参 \\
+4 & 四 & 肆 \\
+5 & 五 & 伍 \\
+\hline
+\end{tabular}
+\end{table}
+
+bibliographyの利用例~\cite{利用例}
+
+%文献の例
+\begin{thebibliography} {99}
+\item{大学} 東邦大学
+\item{学部} 理学部
+\item{学科} 情報科学科
+\end{thebibliography}
+
+\end{center}
+%本文の終わり
+\end{document}
